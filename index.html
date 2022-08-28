@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    
+    <!-- CSS  -->
+    <link rel="stylesheet" href="/uteis/02/style.css">
+
+    <title>Datatable Server-Side & MYSQL ::</title>
+</head>
+<body>
+
+    <section class="section-one">
+
+        <!-- start navbar -->
+        <nav class="nav">
+            <h5 class="nav-h5">DataTable Server-Side & MYSQL</h5>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- campos hidden -->
+        <input type="hidden" name="nome_aux" id="nome_aux">
+        <input type="hidden" name="sexo_aux" id="sexo_aux">
+        <!-- campos hidden -->
+
+        <!-- start filter -->
+        <div class="form-filter">
+            <!-- <form action="/uteis/02/server-side.php" method="post" id="form-filtro"> -->
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome" >
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="sexo" name="sexo" placeholder="Sexo">
+                  </div>
+                  <div class="col">
+                    <button type="submit" id="btn-submit" class="btn btn-primary mb-2">Pesquisar</button>
+                  </div>
+                </div>
+            <!-- </form> -->
+        </div>
+        <!-- end filter -->
+
+        <!-- start table -->
+        <div class="container">
+            <table id="example" class="display nowrap" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>TELEFONE</th>
+                        <th>SEXO</th>
+                        <th>EMAIL</th>
+                        <th>CPF</th>
+                        <th>NASC</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <!-- end table  -->
+
+    </section>
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <!-- <script src="https://cdn.datatables.net/scroller/2.0.7/js/dataTables.scroller.min.js"></script> -->
+    <script src="/uteis/02/jscript.js"></script>
+</body>
+</html>
